@@ -1,0 +1,54 @@
+/* COLORS */
+/* MAIN CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style-type: none;
+  color: white;
+}
+
+body {
+  background: url(../img/handprints.jpg) 0 0/10% repeat;
+}
+
+main > h2 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  color: #c88c28;
+  text-shadow: white 0 0 3px;
+}
+main > div {
+  box-shadow: 0 0 12px black;
+  border-top: 1px solid #37393b;
+  border-bottom: 1px solid #37393b;
+  background: rgba(200, 140, 40, 0.845);
+  padding: 1em;
+}
+main > div * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+footer {
+  min-height: 100%;
+}
+
+.mainmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.mainmenu > li ul {
+  display: none;
+  position: absolute;
+}
+.mainmenu > li:hover ul, .mainmenu > li:active ul {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
