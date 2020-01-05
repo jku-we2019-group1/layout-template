@@ -1,0 +1,272 @@
+//@import 'constants';
+//@import 'defaults';
+//@import 'mixins';
+//@import 'layout';
+//@import 'navigation';
+
+/* COLORS */
+
+$c_bg: rgb(250, 255, 250);
+$c_main: #0b5500;
+$c_text: black;
+$c_inv: white;
+$c_hl: #A6D49F;
+$c_alt: rgb(202, 110, 0);
+
+// PRESETS
+
+@mixin border($radius, $width, $style, $color) {
+    //-ms-border-radius: $radius;
+    //-o-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    border: $width $style $color;
+}
+
+/* MAIN CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: $c_bg;
+    color: $c_text;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12pt;
+
+}
+
+body > * {
+    width: 100%;
+
+    > * {
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        max-width: 1400px;
+    }
+}
+
+
+.main-nav {
+    position: relative;
+    margin-top: 0;
+
+    a.site-logo {
+        display: block;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+
+        img {
+            height: 108px;
+            width: (108px / 185px) * 342px;
+            border: 0 none;
+            box-shadow: 0 0 8px black;
+        }
+    }
+
+    h1 {
+        display: none;
+    }
+
+    ul {
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
+        text-align: right;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 0.8em;
+
+        &:hover .link {
+            color: $c_hl;
+
+            &:before {
+                background-position-y: -40.5px;
+            }
+        }
+
+        .link {
+            color: $c_main;
+            text-decoration: none;
+
+            &:before {
+                display: block;
+                position: relative;
+                content: " ";
+                margin: 0 auto;
+                height: 20px;
+                width: 20px;
+                background-image: url("../img/buttons.png");
+                background-size: 84px 80px;
+                background-position-y: -20px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .profile:before {
+            background-position-x: 0;
+        }
+
+        .login:before {
+            background-position-x: -20px;
+        }
+
+        .logout:before {
+            background-position-x: -40px;
+        }
+
+        .home:before {
+            width: 23px;
+            background-position-x: -61px;
+        }
+    }
+}
+
+.context-nav {
+    background-color: $c_main;
+    box-shadow: 0 0 8px lighten($c_text, 0.9);
+    color: $c_bg;
+
+    ul {
+        margin: {
+            top: 0;
+            bottom: 0
+        };
+        padding: 0;
+        padding-left: 240px;
+    }
+
+    a {
+        display: block;
+        line-height: 2.5em;
+        font-size: 1.1em;
+        padding: 0 1em;
+
+        &, &:link, &:visited, &:hover, &:active {
+            color: $c_inv;
+            text-decoration: none;
+        }
+    }
+
+    li {
+        display: inline-block;
+        position: relative;
+
+        overflow: visible;
+
+        &:hover, &.active {
+            background-color: $c_alt;
+
+            ul {
+                display: block;
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background: $c_alt;
+
+            li {
+                display: block;
+
+                &:hover {
+                    background: $c_main
+                }
+            }
+        }
+    }
+}
+
+.content {
+
+}
+
+article {
+    h2 {
+        text-shadow: white 0 0 3px;
+    }
+
+    & > div {
+        box-shadow: 0 0 12px black;
+        border-top: 1px solid #37393b;
+        border-bottom: 1px solid #37393b;
+        padding: 1em;
+
+        * {
+
+        }
+    }
+}
+
+a {
+    &, &:link, &:visited {
+        color: $c_main;
+    }
+
+    &:hover, &:active {
+        color: $c_alt;
+    }
+}
+
+aside.copyright {
+    width: 100%;
+    background: $c_main;
+    box-shadow: lighten($c_text, 0.9) 0 0 8px;
+
+    color: $c_bg;
+
+    > div {
+        line-height: 1.6em;
+    }
+}
+
+footer {
+    min-height: 100%;
+
+    nav {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+
+    label {
+        font-size: 1.1em;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        margin: 0.4em 0 1em;
+    }
+
+    a {
+        float: right;
+        color: $c_main;
+        font-size: 0.9em;
+
+        &:hover, &:active {
+            color: $c_alt;
+        }
+    }
+
+    button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
