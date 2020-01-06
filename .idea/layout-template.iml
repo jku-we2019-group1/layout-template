@@ -6,7 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/vocov/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/vocov/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/vocov/public" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/vocov/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vocov/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/vocov/vendor/doctrine/inflector" />

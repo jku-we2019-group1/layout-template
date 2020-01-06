@@ -15,9 +15,8 @@
 </head>
 <body>
 @include('layout.header')
-@include('layout.context-navigation')
 <main>
-    <div class="wrapper">
+    <div class="content">
         @section('content')
             <p>Content example</p>
             <h1>Header 1</h1>
@@ -55,80 +54,8 @@
                 <li>Liste Entry 3</li>
             </ol>
         @show
-
     </div>
-    <div class="wrapper">
-        <h1>Register</h1>
-        <aside>
-            <img src="/api/user/ID/profilepicture" alt="Profile picture">
-            <button type="submit">Upload Profile Picture"</button>
-        </aside>
-        <form class="data_frm" action="/register/volunteer" method="post">
-            <label for="name">First Name:</label>
-            <input id="name" type="text">
-            <label for="surname">Last Name:</label>
-            <input id="surname" type="text">
-            <label for="birthdate">Date of Birth:</label>
-            <input id="birthdate" type="date">
-            <label for="address">Address:</label>
-            <input id="address" type="text">
-            <label for="phone">Phone:</label>
-            <input id="phone" type="tel">
-            <label for="email">E-Mail Address:</label>
-            <input id="email" type="email">
-            <label for="cv">CV:</label>
-            <input id="cv" type="file">
-            <input type="submit" value="Login">
-        </form>
-    </div>
-    <div class="wrapper">
-        <h1>Max Mustermann <a class="edit-profile" href="/profile/edit">Edit Profile</a></h1>
-        <aside>
-            <img src="/api/user/profilepicture" alt="Profile picture">
-        </aside>
-        <h2>Personal Data:</h2>
-        <dl>
-            <dt>Birthdate:</dt>
-            <dd></dd>
-            <dt>Address:</dt>
-            <dd></dd>
-            <dt>Phone:</dt>
-            <dd></dd>
-            <dt>Email:</dt>
-            <dd></dd>
-            <dt>CV:</dt>
-            <dd><a href="/api/user/cv" title="Open CV.pdf"></a></dd>
-        </dl>
-        <h2>Competencies</h2>
-        <-- add js //-->
-    </div>
-
-
 </main>
-
-<aside class="copyright">
-    <div>(c) 2020, JKU Linz</div>
-</aside>
-<footer>
-    <nav>
-        <div>
-            <h4>Change User:</h4>
-            <ul class="sitemap">
-                <li><a href="/setuser/A">User A</a></li>
-                <li><a href="/setuser/B">User B</a></li>
-                <li><a href="/setuser/admin">Admin</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Sitemap:</h4>
-            <ul class="sitemap">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </nav>
-</footer>
+@include('layout.footer')
 </body>
 </html>

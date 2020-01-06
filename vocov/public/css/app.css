@@ -13,13 +13,14 @@ body, html {
   font-size: 12pt;
 }
 
-body > * {
+header, main, footer {
   width: 100%;
 }
-body > * > * {
+
+.wrapped, .main-nav, .context-nav, .content, .nav-control {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1400px;
+  max-width: 1010px;
 }
 
 .main-nav {
@@ -29,6 +30,7 @@ body > * > * {
 .main-nav a.site-logo {
   display: block;
   position: absolute;
+  left: 1em;
   margin: 0;
   padding: 0;
   border: 0 none;
@@ -88,11 +90,6 @@ body > * > * {
   background-position-x: -61px;
 }
 
-.context-nav {
-  background-color: #0b5500;
-  box-shadow: 0 0 8px #020202;
-  color: #fafffa;
-}
 .context-nav ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -132,6 +129,10 @@ body > * > * {
   background: #0b5500;
 }
 
+.content {
+  padding: 1em 1em 3em;
+}
+
 article h2 {
   text-shadow: white 0 0 3px;
 }
@@ -149,22 +150,20 @@ a:hover, a:active {
   color: #ca6e00;
 }
 
-aside.copyright {
+.site-bar {
   width: 100%;
+  min-height: 1.6rem;
   background: #0b5500;
   box-shadow: #020202 0 0 8px;
   color: #fafffa;
 }
-aside.copyright > div {
-  line-height: 1.6em;
-}
 
-footer {
-  min-height: 100%;
-}
-footer nav {
+.nav-control {
   display: grid;
   grid-template-columns: auto auto;
+}
+.nav-control > * {
+  text-align: center;
 }
 
 form {

@@ -9,4 +9,7 @@
             <li><a class="link logout" href="/logout">Logout</a></li>
         </ul>
     </nav>
+    <div class="site-bar">
+        @include('layout.context-navigation')
+    </div>
 </header>

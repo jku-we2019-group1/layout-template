@@ -11,10 +11,6 @@
 |
 */
 
-Route::fallback(function () {
-    return view('home');
-});
-
 Route::get('/', function () {
     return view('home');
 });
@@ -23,6 +19,5 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::any('/login', function () {
-    return view('login');
-});
+Route::view('/login', 'login');
+Route::view('/register', 'register');
