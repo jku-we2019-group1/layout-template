@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+a {
+    &, &:link, &:visited {
+        color: $c_main;
+    }
+
+    &:hover, &:active {
+        color: $c_alt;
+    }
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+
+    a {
+        float: right;
+        font-size: 0.9em;
+
+        &:hover, &:active {
+            color: $c_alt;
+        }
+    }
+}
+
+button {
+    display: block;
+    margin: 0.4em auto;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0.4em 0 1em;
+}

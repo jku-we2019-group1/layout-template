@@ -1,0 +1,22 @@
+// COLORS //
+
+$c_bg: rgb(250, 255, 250);
+$c_main: #0b5500;
+$c_text: black;
+$c_inv: white;
+$c_hl: #A6D49F;
+$c_alt: rgb(202, 110, 0);
+
+// SIZES //
+
+// PRESETS //
+
+@mixin border($radius, $width, $style, $color) {
+    //-ms-border-radius: $radius;
+    //-o-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    border: $width $style $color;
+}
+
