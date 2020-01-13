@@ -35,6 +35,30 @@ a {
     }
 }
 
+img {
+
+}
+
+ul, ol, li {
+}
+
+dl {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    grid-gap: 2em;
+}
+
+dt {
+    font-weight: bold;
+    text-align: right
+}
+
+dd {
+    margin: 0;
+}
+
+
 form {
     margin: 0 auto;
     max-width: 400px;
@@ -62,4 +86,21 @@ input {
     display: block;
     width: 100%;
     margin: 0.4em 0 1em;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 1em;
+    margin: 0;
+    padding: 0;
+
+    * {
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }

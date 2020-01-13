@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Data\DataController;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -36,5 +38,39 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    /**
+     * Set User active
+     *
+     * @param Request $request
+     */
+    public function login(Request $request)
+    {
+        $hiddenUserId = substr($request->input('password'), 0, 1);
+
+        $dc = new DataController();
+        if (!$user = $dc->getUser($hiddenUserId)) {
+            echo '<pre>' . print_r($request->input(), 1) . '</pre>';
+            return redirect('/login')->withInput();
+        }
+
+        session_start();
+        $_SESSION['user'] = $user;
+
+        return redirect('/profile/' . strtolower($user['id']));
+    }
+
+    /**
+     * logout user
+     *
+     * @param Request $request
+     */
+    public function logoff(Request $request)
+    {
+        session_start();
+        session_destroy();
+
+        return redirect('/');
     }
 }
