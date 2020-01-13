@@ -22,6 +22,14 @@ h3 {
 h4 {
 }
 
+h1, h2, h3, h4 {
+    > span, a {
+        margin-left: 1em;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+}
+
 p {
 }
 
@@ -34,6 +42,31 @@ a {
         color: $c_alt;
     }
 }
+
+img {
+    border: 1px solid $c_main;
+}
+
+ul, ol, li {
+}
+
+
+dl {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    grid-gap: 2em;
+}
+
+dt {
+    font-weight: bold;
+    text-align: right
+}
+
+dd {
+    margin: 0;
+}
+
 
 form {
     margin: 0 auto;
@@ -62,4 +95,58 @@ input {
     display: block;
     width: 100%;
     margin: 0.4em 0 1em;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 1em;
+    margin: 0;
+    padding: 0;
+
+    * {
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0.2em 0.4em;
+    }
+}
+
+.full {
+    display: block;
+    width: 100%;
+    padding: 0.2em 0;
+    list-style: none;
+}
+
+button, input, .button {
+    display: block;
+    margin: 0.6em 0;
+
+    line-height: 1.6em;
+    border: 2px solid $c_text;
+    border-radius: 0 10px;
+    padding: 0.2em 1em;
+    box-shadow: $c_main -2px 2px 4px;
+
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 1em;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/buttons.png");
+    background-size: 84px 80px;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+    background-position-x: 0;
 }

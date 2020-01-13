@@ -172,6 +172,37 @@ header, main, footer {
     grid-template-columns: auto auto;
 
     > * {
-        text-align: center;
+       // text-align: center;
+    }
+}
+
+.prototype {
+    position: fixed;
+    width: 100%;
+    min-height: 40px;
+    bottom: 0;
+
+
+    > div {
+        @extend .wrapped;
+        padding: 0.6em;
+        background: lighten($c_alt, 30);
+        border: 2px dotted red;
+        border-bottom: 0 none;
+        border-radius: 10px 10px 0 0;
+
+        opacity: 0;
+        transition: opacity 0.4s;
+        transition-timing-function: ease-in;
+    }
+
+    &:hover > div {
+        opacity: 1;
+    }
+
+    p, ul, li {
+        display: inline-block;
+        margin: 0.2em;
+        padding: 0;
     }
 }

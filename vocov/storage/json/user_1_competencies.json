@@ -1,0 +1,189 @@
+{
+    "UserID": "00001",
+    "CompetenceDomains": [
+        {
+            "CompetenceDomainID": "P",
+            "CompetenceDomainName": "Personal Competence",
+            "Competences": [
+                {
+                    "CompetenceID": "01",
+                    "CompetenceName": "Loyality",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "03",
+                    "CompetenceName": "Credibility",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "06",
+                    "CompetenceName": "Self-management",
+                    "Degree": 1
+                },
+                {
+                    "CompetenceID": "07",
+                    "CompetenceName": "Creative talent",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "08",
+                    "CompetenceName": "Openness toward change",
+                    "Degree": 1
+                },
+                {
+                    "CompetenceID": "10",
+                    "CompetenceName": "Cooperativeness",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "11",
+                    "CompetenceName": "Employee promotion",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "12",
+                    "CompetenceName": "Delegate",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "13",
+                    "CompetenceName": "Willingness to learn",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "15",
+                    "CompetenceName": "Discipline",
+                    "Degree": 4
+                },
+                {
+                    "CompetenceID": "16",
+                    "CompetenceName": "Reliability",
+                    "Degree": 2
+                }
+            ]
+        },
+        {
+            "CompetenceDomainID": "S",
+            "CompetenceDomainName": "Socio-communicative competences",
+            "Competences": [
+                {
+                    "CompetenceID": "17",
+                    "CompetenceName": "Ability to resolve conflicts",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "22",
+                    "CompetenceName": "Ability to solve problems",
+                    "Degree": 1
+                },
+                {
+                    "CompetenceID": "24",
+                    "CompetenceName": "Capacity to advice",
+                    "Degree": 4
+                },
+                {
+                    "CompetenceID": "25",
+                    "CompetenceName": "Ability to communicate",
+                    "Degree": 1
+                },
+                {
+                    "CompetenceID": "26",
+                    "CompetenceName": "Capacity to cooperate",
+                    "Degree": 7
+                },
+                {
+                    "CompetenceID": "27",
+                    "CompetenceName": "Relation management",
+                    "Degree": 4
+                },
+                {
+                    "CompetenceID": "32",
+                    "CompetenceName": "Assiduousness",
+                    "Degree": 10
+                }
+            ]
+        },
+        {
+            "CompetenceDomainID": "A",
+            "CompetenceDomainName": "Activity and action competence",
+            "Competences": [
+                {
+                    "CompetenceID": "33",
+                    "CompetenceName": "Capacity to make decisions",
+                    "Degree": 8
+                },
+                {
+                    "CompetenceID": "34",
+                    "CompetenceName": "Creative will",
+                    "Degree": 7
+                },
+                {
+                    "CompetenceID": "36",
+                    "CompetenceName": "Ability to handle stress",
+                    "Degree": 8
+                },
+                {
+                    "CompetenceID": "38",
+                    "CompetenceName": "Mobility",
+                    "Degree": 0
+                },
+                {
+                    "CompetenceID": "42",
+                    "CompetenceName": "Social engagement",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "44",
+                    "CompetenceName": "Quick-wittedness",
+                    "Degree": 9
+                },
+                {
+                    "CompetenceID": "45",
+                    "CompetenceName": "Result-oriented action-taking",
+                    "Degree": 5
+                },
+                {
+                    "CompetenceID": "46",
+                    "CompetenceName": "Goal-oriented management",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "48",
+                    "CompetenceName": "Consequence",
+                    "Degree": 1
+                }
+            ]
+        },
+        {
+            "CompetenceDomainID": "M",
+            "CompetenceDomainName": "Methods and professional competence",
+            "Competences": [
+                {
+                    "CompetenceID": "49",
+                    "CompetenceName": "Knowledge-oriented",
+                    "Degree": 1
+                },
+                {
+                    "CompetenceID": "50",
+                    "CompetenceName": "Analytical talent/ability",
+                    "Degree": 0
+                },
+                {
+                    "CompetenceID": "54",
+                    "CompetenceName": "Talent for organizing",
+                    "Degree": 9
+                },
+                {
+                    "CompetenceID": "57",
+                    "CompetenceName": "Project management",
+                    "Degree": 9
+                },
+                {
+                    "CompetenceID": "59",
+                    "CompetenceName": "Ability to teach",
+                    "Degree": 6
+                }
+            ]
+        }
+    ]
+}

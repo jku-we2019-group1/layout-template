@@ -1,0 +1,129 @@
+{
+	"UserID": "00003",
+	"CompetenceDomains": [
+		{
+			"CompetenceDomainID": "P",
+			"CompetenceDomainName": "Personal Competence",
+			"Competences": [
+				{
+					"CompetenceID": 6,
+					"CompetenceName": "Self-management",
+					"Degree": 2
+				},
+				{
+					"CompetenceID": 8,
+					"CompetenceName": "Openness toward change",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": 10,
+					"CompetenceName": "Cooperativeness",
+					"Degree": 3
+				},
+				{
+					"CompetenceID": "11",
+					"CompetenceName": "Employee promotion",
+					"Degree": 5
+				},
+				{
+					"CompetenceID": "13",
+					"CompetenceName": "Willingness to learn",
+					"Degree": 2
+				},
+				{
+					"CompetenceID": "15",
+					"CompetenceName": "Discipline",
+					"Degree": 8
+				}
+			]
+		},
+				{
+			"CompetenceDomainID": "S",
+			"CompetenceDomainName": "Socio-communicative competences",
+			"Competences": [
+				{
+					"CompetenceID": "17",
+					"CompetenceName": "Ability to resolve conflicts",
+					"Degree": 6
+				},
+				{
+					"CompetenceID": "24",
+					"CompetenceName": "Capacity to advice",
+					"Degree": 4
+				},
+				{
+					"CompetenceID": "25",
+					"CompetenceName": "Ability to communicate",
+					"Degree": 10
+				},
+				{
+					"CompetenceID": "26",
+					"CompetenceName": "Capacity to cooperate",
+					"Degree": 8
+				}
+			]
+		},
+		{
+			"CompetenceDomainID": "A",
+			"CompetenceDomainName": "Activity and action competence",
+			"Competences": [
+				{
+					"CompetenceID": "33",
+					"CompetenceName": "Capacity to make decisions",
+					"Degree": 7
+				},
+				{
+					"CompetenceID": "36",
+					"CompetenceName": "Ability to handle stress",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": "38",
+					"CompetenceName": "Mobility",
+					"Degree": 6
+				},
+				{
+					"CompetenceID": "44",
+					"CompetenceName": "Quick-wittedness",
+					"Degree": 4
+				},
+				{
+					"CompetenceID": "45",
+					"CompetenceName": "Result-oriented action-taking",
+					"Degree": 3
+				},
+				{
+					"CompetenceID": "46",
+					"CompetenceName": "Goal-oriented management",
+					"Degree": 8
+				}
+			]
+		},
+        {
+            "CompetenceDomainID": "M",
+            "CompetenceDomainName": "Methods and professional competence",
+            "Competences": [
+                {
+                    "CompetenceID": "49",
+                    "CompetenceName": "Knowledge-oriented",
+                    "Degree": 2
+                },
+                {
+                    "CompetenceID": "54",
+                    "CompetenceName": "Talent for organizing",
+                    "Degree": 9
+                },
+                {
+                    "CompetenceID": "57",
+                    "CompetenceName": "Project management",
+                    "Degree": 9
+                },
+                {
+                    "CompetenceID": "59",
+                    "CompetenceName": "Ability to teach",
+                    "Degree": 5
+                }
+            ]
+        }
+	]
+}

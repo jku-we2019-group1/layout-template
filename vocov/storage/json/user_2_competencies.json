@@ -1,0 +1,149 @@
+{
+	"UserID": "00002",
+	"CompetenceDomains": [
+		{
+			"CompetenceDomainID": "P",
+			"CompetenceDomainName": "Personal Competence",
+			"Competences": [
+				{
+					"CompetenceID": "01",
+					"CompetenceName": "Loyality",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": "03",
+					"CompetenceName": "Credibility",
+					"Degree": 5
+				},
+				{
+					"CompetenceID": "08",
+					"CompetenceName": "Openness toward change",
+					"Degree": 2
+				},
+				{
+					"CompetenceID": "11",
+					"CompetenceName": "Employee promotion",
+					"Degree": 10
+				},
+				{
+					"CompetenceID": "12",
+					"CompetenceName": "Delegate",
+					"Degree": 8
+				},
+				{
+					"CompetenceID": "13",
+					"CompetenceName": "Willingness to learn",
+					"Degree": 7
+				},
+				{
+					"CompetenceID": "15",
+					"CompetenceName": "Discipline",
+					"Degree": 3
+				},
+				{
+					"CompetenceID": "16",
+					"CompetenceName": "Reliability",
+					"Degree": 5
+				}
+			]
+		},
+				{
+			"CompetenceDomainID": "S",
+			"CompetenceDomainName": "Socio-communicative competences",
+			"Competences": [
+				{
+					"CompetenceID": "17",
+					"CompetenceName": "Ability to resolve conflicts",
+					"Degree": 5
+				},
+				{
+					"CompetenceID": "22",
+					"CompetenceName": "Ability to solve problems",
+					"Degree": 2
+				},
+				{
+					"CompetenceID": "24",
+					"CompetenceName": "Capacity to advice",
+					"Degree": 10
+				},
+				{
+					"CompetenceID": "25",
+					"CompetenceName": "Ability to communicate",
+					"Degree": 8
+				},
+				{
+					"CompetenceID": "27",
+					"CompetenceName": "Relation management",
+					"Degree": 5
+				}
+			]
+		},
+        {
+            "CompetenceDomainID": "A",
+            "CompetenceDomainName": "Activity and action competence",
+            "Competences": [
+                {
+                    "CompetenceID": "33",
+                    "CompetenceName": "Capacity to make decisions",
+                    "Degree": 10
+                },
+                {
+                    "CompetenceID": "34",
+                    "CompetenceName": "Creative will",
+                    "Degree": 8
+                },
+                {
+                    "CompetenceID": "38",
+                    "CompetenceName": "Mobility",
+                    "Degree": 2
+                },
+                {
+                    "CompetenceID": "42",
+                    "CompetenceName": "Social engagement",
+                    "Degree": 5
+                },
+                {
+                    "CompetenceID": "44",
+                    "CompetenceName": "Quick-wittedness",
+                    "Degree": 5
+                },
+                {
+                    "CompetenceID": "46",
+                    "CompetenceName": "Goal-oriented management",
+                    "Degree": 3
+                },
+                {
+                    "CompetenceID": "48",
+                    "CompetenceName": "Consequence",
+                    "Degree": 2
+                }
+            ]
+        },
+		{
+			"CompetenceDomainID": "M",
+			"CompetenceDomainName": "Methods and professional competence",
+			"Competences": [
+				{
+					"CompetenceID": "49",
+					"CompetenceName": "Knowledge-oriented",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": "54",
+					"CompetenceName": "Talent for organizing",
+					"Degree": 7
+				},
+				{
+					"CompetenceID": "57",
+					"CompetenceName": "Project management",
+					"Degree": 6
+				},
+				{
+					"CompetenceID": "59",
+					"CompetenceName": "Ability to teach",
+					"Degree": 2
+				}
+			]
+		}
+	]
+}

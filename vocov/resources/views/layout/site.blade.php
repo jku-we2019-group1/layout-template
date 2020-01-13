@@ -6,12 +6,14 @@
 
     <title>VoCoV (Prototype v0.1)</title>
 
+@section('styles-head')
     <!-- Fonts -->
     <!--link href="https://fonts.googleapis.com/css?family=Roboto:200,600" rel="stylesheet"-->
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+@show
+@section('scripts-head')
+@show
 </head>
 <body>
 @include('layout.header')

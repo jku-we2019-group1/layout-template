@@ -1,0 +1,89 @@
+{
+	"UserID": "00005",
+	"CompetenceDomains": [
+		{
+			"CompetenceDomainID": "P",
+			"CompetenceDomainName": "Personal Competence",
+			"Competences": [
+				{
+					"CompetenceID": "03",
+					"CompetenceName": "Credibility",
+					"Degree": 10
+				},
+				{
+					"CompetenceID": "07",
+					"CompetenceName": "Creative talent",
+					"Degree": 3
+				},
+				{
+					"CompetenceID": "12",
+					"CompetenceName": "Delegate",
+					"Degree": 10
+				},
+				{
+					"CompetenceID": "16",
+					"CompetenceName": "Reliability",
+					"Degree": 2
+				}
+			]
+		},
+				{
+			"CompetenceDomainID": "S",
+			"CompetenceDomainName": "Socio-communicative competences",
+			"Competences": [
+				{
+					"CompetenceID": "22",
+					"CompetenceName": "Ability to solve problems",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": "27",
+					"CompetenceName": "Relation management",
+					"Degree": 4
+				},
+				{
+					"CompetenceID": "26",
+					"CompetenceName": "Capacity to cooperate",
+					"Degree": 7
+				}
+			]
+		},
+		{
+			"CompetenceDomainID": "M",
+			"CompetenceDomainName": "Methods and professional competence",
+			"Competences": [
+				{
+					"CompetenceID": "49",
+					"CompetenceName": "Knowledge-oriented",
+					"Degree": 1
+				},
+				{
+					"CompetenceID": "50",
+					"CompetenceName": "Analytical talent/ability",
+					"Degree": 0
+				}
+			]
+		},
+		{
+			"CompetenceDomainID": "A",
+			"CompetenceDomainName": "Activity and action competence",
+			"Competences": [
+				{
+					"CompetenceID": "33",
+					"CompetenceName": "Capacity to make decisions",
+					"Degree": 8
+				},
+				{
+					"CompetenceID": "42",
+					"CompetenceName": "Social engagement",
+					"Degree": 3
+				},
+				{
+					"CompetenceID": "45",
+					"CompetenceName": "Result-oriented action-taking",
+					"Degree": 5
+				}
+			]
+		}
+	]
+}
