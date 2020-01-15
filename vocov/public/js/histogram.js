@@ -1,5 +1,5 @@
 let id = 'chart', canvas;
-let data;
+let data, sections;
 let numSegments, maxDepth = 0;
 
 let margin = 30, details = 30;
@@ -12,6 +12,7 @@ function init(json, element) {
     id = element;
     canvas = document.getElementById(id);
     data = prepareData(json);
+    sections = prepareHeadlines(json);
     draw();
 }
 
@@ -26,6 +27,38 @@ function prepareData(json) {
     numSegments = domains.length;
 
     return domains;
+}
+
+function prepareHeadlines(json) {
+    const headings = [];
+    json['CompetenceDomains'].forEach((cd) => {
+        let idx = cd['Competences'][0]['CompetenceID'];
+        let short;
+        switch (cd['CompetenceDomainID']) {
+            case "P":
+                short = "Personal";
+                break;
+            case "S":
+                short = "Socio-comm.";
+                break;
+            case "M":
+                short = "Methods/Profession";
+                break;
+            case "A":
+                short = "Activity/Action";
+                break;
+            default :
+                short = "";
+        }
+        headings[idx] = {
+            id: cd['CompetenceDomainID'],
+            name: cd['CompetenceDomainName'],
+            short: short
+        };
+    });
+
+    console.log(headings);
+    return headings;
 }
 
 function setSizes() {
@@ -55,6 +88,9 @@ function draw() {
     // outer ring
     segment.append("path")
         .attr("class", "arcBlock")
+        .attr("id", (d, i) => {
+            return "arcBlock_" + d.id;
+        })
         .attr("d", d3.arc()
             .innerRadius(radii[2])
             .outerRadius(radii[3])
@@ -101,9 +137,10 @@ function draw() {
     segment.append("g")
         .attr("text-anchor", (d, i) => {
             return phi(i) < Math.PI ? "end" : "start";
-        }).attr("transform", (d, i) => {
-        return "rotate(" + (360 * (i + 0.5) / numSegments - 90) + ") translate(" + radii[1] * 0.96 + ")";
-    })
+        })
+        .attr("transform", (d, i) => {
+            return "rotate(" + (360 * (i + 0.5) / numSegments - 90) + ") translate(" + radii[1] * 0.96 + ")";
+        })
         .append("text")
         .text((d) => {
             return label(d);
@@ -113,13 +150,29 @@ function draw() {
         })
         .style("font-size", "1.00rem")
         .attr("dominant-baseline", "mathematical");
+
+    // add headings
+    segment.append("text")
+        .attr("x", 5)   // Rotate the text from the start angle of the arc
+        .attr("dy", -10) //Move the text down
+        .append("textPath")
+        .attr("xlink:href", function (d, i) {
+            return "#arcBlock_" + d.id;
+        })
+        .text((d) => {
+            return domainShort(d);
+        })
+        .style("font-size", "0.90rem")
+        .style("font-weight", "bold")
+    //.attr("dominant-baseline", "mathematical");
+
 }
 
 let color = (d, i) => {
     let base = (id) => {
         let sat = (id - 1) % 16;
         switch (Math.floor((id - 1) / 16)) {
-            case 0: // roötlich
+            case 0: // rötlich
                 return {r: 255, g: 102 + sat * 5, b: 102 + sat * 7};
             case 1: // blau
                 return {r: 85 + sat * 7, g: 85 + sat * 7, b: 255};
@@ -141,14 +194,8 @@ let r = (d) => {
 let label = (d) => {
     return d.name
 };
+let domainShort = (d) => {
+    return (sections[d.id] != null) ? sections[d.id]['short'] : "";
+};
 
-// Append category names
-// svg.selectAll(".monthText")
-//     .data(monthData)
-//     .enter().append("text")
-//     .attr("class", "monthText")
-//     .attr("x", 5)   //Move the text from the start angle of the arc
-//     .attr("dy", 18) //Move the text down
-//     .append("textPath")
-//     .attr("xlink:href",function(d,i){return "#monthArc_"+i;})
-//     .text(function(d){return d.month;});
+

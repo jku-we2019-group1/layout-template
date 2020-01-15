@@ -27,7 +27,7 @@
         <ul>
             <li><a href="/profile/1">1</a></li>
             <li><a href="/profile/2">2</a></li>
-            <li><a href="/profile/3">2</a></li>
+            <li><a href="/profile/3">3</a></li>
             <li><a href="/profile/4">4</a></li>
             <li><a href="/profile/5">5</a></li>
         </ul>
